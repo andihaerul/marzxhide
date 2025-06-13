@@ -17,12 +17,12 @@ token=$(echo $response | jq -r '.access_token')
 echo $token > token.txt
 
 #add on Vmess
-wget -O /usr/local/bin/add-vmess-user "https://raw.githubusercontent.com/andihaerul/Developers/main/marzxhide/gen-vmess.sh"
-wget -O /usr/local/bin/del-vmess-user "https://raw.githubusercontent.com/andihaerul/Developers/main/marzxhide/del-vmess.sh"
+wget -O /usr/local/bin/add-vmess-user "https://raw.githubusercontent.com/andihaerul/marzxhide/main/gen-vmess.sh"
+wget -O /usr/local/bin/del-vmess-user "https://raw.githubusercontent.com/andihaerul/marzxhide/main/del-vmess.sh"
 
 #add on Trojan
-wget -O /usr/local/bin/add-trojan-user "https://raw.githubusercontent.com/andihaerul/Developers/main/marzxhide/gen-trojan.sh"
-wget -O /usr/local/bin/del-trojan-user "https://raw.githubusercontent.com/andihaerul/Developers/main/marzxhide/del-vmess.sh"
+wget -O /usr/local/bin/add-trojan-user "https://raw.githubusercontent.com/andihaerul/marzxhide/main/gen-trojan.sh"
+wget -O /usr/local/bin/del-trojan-user "https://raw.githubusercontent.com/andihaerul/marzxhide/main/del-vmess.sh"
 
 #permission
 chmod +x /usr/local/bin/add-vmess-user
